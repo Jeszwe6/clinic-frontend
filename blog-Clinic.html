@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/swiper-min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-theme.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <title> وبلاگ کلینیک   </title>
+    <link rel="website icon" type="png" href="./assets/img/Fav.png">
+</head>
+
+<body>
+
+    <div class="preloader js-preloader">
+        <img src="assets/img/preloader.gif" alt="Image">
+    </div>
+
+
+    <div class="switch-theme-mode">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+
+    <div class="page-wrapper ">
+        <header class="header-wrap style1">
+            <div class="header-top bg-white xl-none">
+                <div class="close-header-top ">
+                    <button type="button"><i class="las la-times"></i></button>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-5">
+                            <a href="index.html" class="logo">
+                                <img class="logo-light" src="assets/img/LOGO-WMODE.png" alt="Image">
+                                <img class="logo-dark" src="assets/img/LOGO-DMODE.png" alt="Image">
+                            </a>
+                        </div>
+                        <div class="col-xl-10 col-lg-6 col-md-6 col-7">
+                            <div class="header-bottom-right">
+                                <div class="header-menu">
+                                    <div class="main-menu-wrap">
+                                        <div class="menu-close xl-none">
+                                            <a href="javascript:void(0)"><i class="las la-times"></i></a>
+                                        </div>
+                                        <div id="menu">
+                                            <ul class="main-menu list-style">
+
+                                                <li class="has-children">
+                                                    <a  href="#"> خانه </a>
+                                                </li>
+
+                                                <li class="has-children">
+                                                    <a href="#"> راهنمای بیماران </a>
+                                                    <ul class="sub-menu list-style">
+                                                        <li><a href="appointment.html">قرار ملاقات</a></li>
+                                                        <li><a href="Feedback.html">بازخورد مشتریان</a></li>
+                                                        <li><a href="Freq-Questions.html">سوالات متداول</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="has-children">
+                                                    <a class="active" href="#">وبلاگ</a>
+                                                    <ul class="sub-menu list-style">
+                                                        <li class="has-children"><a class="active" href="#">وبلاگ ما</a>
+                                                            <ul class="sub-menu list-style">
+                                                                <li><a class="active" href="blog-Clinic.html"> وبلاگ کلینیک </a></li>
+                                                                <li><a href="blog-Beauty.html"> وبلاگ زیبایی </a></li>
+                                                                <li><a href="blog-Dental.html">وبلاگ دندانپزشکی</a></li>
+                                                                <li><a href="blog-Nutrition.html">
+                                                                        وبلاگ تغذیه و سلامت
+                                                                    </a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="blog-Esfahan.html"> درباره ی اصفهان
+                                                        </a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="has-children">
+                                                    <a href="#"> درباره ما </a>
+                                                    <ul class="sub-menu list-style">
+                                                        <li><a href="team.html"> تیم متخصص </a></li>
+                                                        <li><a href="about-Clinic.html"> خدمات کلینیک </a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="has-children">
+                                                    <a href="#"> سرویس ها </a>
+                                                    <ul class="sub-menu list-style">
+                                                        <li><a href="privacy-policy.html">حریم خصوصی</a></li>
+                                                        <li><a href="terms-conditions.html">شرایط و ضوابط</a></li>
+                                                        <li><a href="Support.html">پشتیبانی</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>
+                                                    <a href="contact.html">تماس با ما</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-bar-wrap">
+                                        <div class="mobile-top-bar xl-none">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="mobile-menu xl-none">
+                                            <a href="javascript:void(0)"><i class="las la-bars"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select-lang lg-none">
+                                    <div class="navbar-option-item navbar-language dropdown language-option">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <i class="las la-globe"></i>
+                                            <span class="lang-name"></span>
+                                        </button>
+                                        <div class="dropdown-menu language-dropdown-menu">
+                                            <a class="dropdown-item" href="#">
+                                                <img src="assets/img/iran.png" alt="flag">
+                                                فارسی
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="assets/img/uk.png" alt="flag">
+                                                انگلیسی
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="assets/img/uae.png" alt="flag">
+                                                العربيّة
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="searchbtn"><i class="flaticon-search-1"></i></button>
+                                <a href="register.html" class="btn style1 lg-none"> ثبت نام </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+
+            <div class="breadcrumb-wrap bg-f br-1">
+                <div class="overlay bg-black op-8"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="breadcrumb-title">
+                                <h2> وبلاگ کلینیک  </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="about-wrap style2 ptb-100">
+                <div class="container">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <a class="d-block about-img bg-f about-bg-3" data-fancybox="gallery"
+                                href="assets/img/about/about-img-3.jpg">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-content">
+                                <div class="content-title">
+                                    <span>درباره ما</span>
+                                    <h2>بهترین درمان برای رضایت ذهنی و فیزیکی شما</h2>
+                                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به سادگی
+                                        ساختار
+                                        چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است.
+                                    </p>
+                                </div>
+                                <div class="about-quote">
+                                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به سادگی
+                                        ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده
+                                        است. ساختار متن بوده است.</p>
+                                    <span>برایدن تاکر</span>
+                                </div>
+                                <div class="about-btn">
+                                    <a href="blog-Clinic.html" class="btn style1">بیشتر بدانید</a>
+                                    <a href="contact.html" class="btn style2">تماس با ما</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="process-wrap bg-souvi style1 pt-100 pb-75">
+                <div class="container">
+                    <div class="section-title style1 mb-40 text-center">
+                        <h2>ارائه خدمات ویژه</h2>
+                        <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به سادگی ساختار چاپ و متن
+                            را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="process-item style2">
+                                <span>1</span>
+                                <h4><a href="#"> خدمات فوق تخصصی </a></h4>
+                                <p>لورم ایپسوم به سادگی چاپ و متن را در بر می گیرد. لورم ایپسوم ساختار چاپ و متن را در
+                                    بر می
+                                    گیرد.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="process-item style2">
+                                <span>2</span>
+                                <h4><a href="#"> رزرو قرار ملاقات آنلاین </a></h4>
+                                <p>لورم ایپسوم به سادگی چاپ و متن را در بر می گیرد. لورم ایپسوم ساختار چاپ و متن را در
+                                    بر می
+                                    گیرد.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="process-item style2">
+                                <span>3</span>
+                                <h4><a href="#"> مشاوره آنلاین </a></h4>
+                                <p>لورم ایپسوم به سادگی چاپ و متن را در بر می گیرد. لورم ایپسوم ساختار چاپ و متن را در
+                                    بر می
+                                    گیرد.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="process-item style2">
+                                <span>4</span>
+                                <h4><a href="#">پشتیبانی 24/7</a></h4>
+                                <p>لورم ایپسوم به سادگی چاپ و متن را در بر می گیرد. لورم ایپسوم ساختار چاپ و متن را در
+                                    بر می
+                                    گیرد.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="process-wrap ptb-100">
+                <div class="container">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="process-content">
+                                <div class="content-title style1 mb-40">
+                                    <span>فرآیند کاری ما</span>
+                                    <h2>سلامت شما هدف ما است.</h2>
+                                    <p class="mt-20">لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم
+                                        به سادگی ساختار چاپ و متن را در بر می گیرد. استاندارد صنعت بوده است.</p>
+                                </div>
+                                <div class="process-item-wrap">
+                                    <div class="process-item style3">
+                                        <div class="process-step ">
+                                            1
+                                        </div>
+                                        <div class="process-text">
+                                            <h5>اول با ما صحبت کنید</h5>
+                                            <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به
+                                                سادگی ساختار چاپ و متن را در بر می گیرد. </p>
+                                        </div>
+                                    </div>
+                                    <div class="process-item style3">
+                                        <div class="process-step">
+                                            2
+                                        </div>
+                                        <div class="process-text">
+                                            <h5>جلسه خود را رزرو کنید</h5>
+                                            <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به
+                                                سادگی ساختار چاپ و متن را در بر می گیرد. </p>
+                                        </div>
+                                    </div>
+                                    <div class="process-item style3">
+                                        <div class="process-step">
+                                            3
+                                        </div>
+                                        <div class="process-text">
+                                            <h5>خدمات ما را دریافت کن</h5>
+                                            <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به
+                                                سادگی ساختار چاپ و متن را در بر می گیرد. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="d-block process-img bg-f process-bg-2" data-fancybox="gallery"
+                                href="assets/img/process/process-bg-2.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="testimonial-wrap style2 bg-souvi pt-100 pb-100">
+                <img src="assets/img/testimonial/testimonial-shape-1.png" alt="Image"
+                    class="testimonial-shape-1 lg-none">
+                <img src="assets/img/testimonial/testimonial-shape-2.png" alt="Image"
+                    class="testimonial-shape-2 lg-none">
+                <div class="container">
+                    <div class="section-title style1 text-center mb-40">
+                        <h2>بازخورد مشتریان</h2>
+                        <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به سادگی ساختار چاپ و متن
+                            را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-slider-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="testimonial-slider-two swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-item style2">
+                                                <div class="client-img">
+                                                    <img src="assets/img/testimonial/client-1.jpg" alt="Image">
+                                                </div>
+                                                <div class="client-info">
+                                                    <h5> زهرا توسلی </h5>
+                                                    <span>بیمار</span>
+                                                </div>
+                                                <div class="client-quote">
+                                                    <span class="quote-icon"><i
+                                                            class="flaticon-right-quotation-sign"></i></span>
+                                                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم
+                                                        ایپسوم به مدت 40 سال استاندارد صنعت بوده است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-item style2">
+                                                <div class="client-img">
+                                                    <img src="assets/img/testimonial/client-2.jpg" alt="Image">
+                                                </div>
+                                                <div class="client-info">
+                                                    <h5> کیان امیری </h5>
+                                                    <span>بیمار</span>
+                                                </div>
+                                                <div class="client-quote">
+                                                    <span class="quote-icon"><i
+                                                            class="flaticon-right-quotation-sign"></i></span>
+                                                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم
+                                                        ایپسوم به مدت 40 سال استاندارد صنعت بوده است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-item style2">
+                                                <div class="client-img">
+                                                    <img src="assets/img/testimonial/client-3.jpg" alt="Image">
+                                                </div>
+                                                <div class="client-info">
+                                                    <h5> ملیکا زارعی </h5>
+                                                    <span>بیمار</span>
+                                                </div>
+                                                <div class="client-quote">
+                                                    <span class="quote-icon"><i
+                                                            class="flaticon-right-quotation-sign"></i></span>
+                                                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم
+                                                        ایپسوم به مدت 40 سال استاندارد صنعت بوده است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-item style2">
+                                                <div class="client-img">
+                                                    <img src="assets/img/testimonial/client-4.jpg" alt="Image">
+                                                </div>
+                                                <div class="client-info">
+                                                    <h5> ناهید شریفیان </h5>
+                                                    <span>بیمار</span>
+                                                </div>
+                                                <div class="client-quote">
+                                                    <span class="quote-icon"><i
+                                                            class="flaticon-right-quotation-sign"></i></span>
+                                                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم
+                                                        ایپسوم به مدت 40 سال استاندارد صنعت بوده است.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-two-next slider-btn style3"><i class="flaticon-right-arrow-angle"></i>
+                    </div>
+                    <div class="testimonial-two-prev slider-btn style3"><i class="flaticon-left-arrow"></i></div>
+                </div>
+            </section>
+
+
+            <section class="wh-choose-wrap ptb-100">
+                <div class="container">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="content-title style1 mb-40">
+                                <span>چرا ما را انتخاب می کنید</span>
+                                <h2 class="mb-15"> شما تصور می کنید و ما خلق می کنیم . </h2>
+                                <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به سادگی ساختار
+                                    چاپ و متن را در بر می گیرد. استاندارد صنعت بوده است.</p>
+                            </div>
+                            <div class="wh-item-wrap">
+                                <div class="wh-item">
+                                    <div class="wh-icon">
+                                        <i class="flaticon-individual"></i>
+                                    </div>
+                                    <div class="wh-text">
+                                        <h5>مشاوره آنلاین</h5>
+                                        <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به سادگی
+                                            ساختار چاپ و متن را در بر می گیرد.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="wh-item">
+                                    <div class="wh-icon">
+                                        <i class="flaticon-brain"></i>
+                                    </div>
+                                    <div class="wh-text">
+                                        <h5>چکاپ کامل</h5>
+                                        <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به سادگی
+                                            ساختار چاپ و متن را در بر می گیرد.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="wh-item">
+                                    <div class="wh-icon">
+                                        <i class="flaticon-doctor"></i>
+                                    </div>
+                                    <div class="wh-text">
+                                        <h5>پزشکان متخصص</h5>
+                                        <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به سادگی
+                                            ساختار چاپ و متن را در بر می گیرد.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="wh-img bg-f wh-bg-1">
+                                <img class="shape-1" src="assets/img/why-choose-us/shape-2.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="partner-wrap bg-souvi ptb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="partner-slider swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="partner-logo">
+                                            <img src="assets/img/partner/partner-logo-1.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner-logo">
+                                            <img src="assets/img/partner/partner-logo-2.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner-logo">
+                                            <img src="assets/img/partner/partner-logo-3.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner-logo">
+                                            <img src="assets/img/partner/partner-logo-4.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner-logo">
+                                            <img src="assets/img/partner/partner-logo-5.png" alt="Image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner-logo">
+                                            <img src="assets/img/partner/partner-logo-6.png" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer-wrap style1 bg-f footer-bg-1">
+            <div class="overlay bg-black op-9"></div>
+            <div class="footer-top pt-100 pb-70">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-widget-wrap">
+                            <div class="footer-widget">
+                                <a href="index.html" class="footer-logo">
+                                    <img src="assets/img/LOGO-DMODE.png" alt="Image" style="width:80%; height:80%;">
+                                </a>
+                                <div class="comp-desc">
+                                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال
+                                        استاندارد صنعت بوده است. لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد.
+                                    </p>
+                                </div>
+                                <div class="social-box">
+                                    <ul class="social-profile style1 list-style">
+                                        <li><a target="_blank" href="https://facebook.com"><i
+                                                    class="flaticon-facebook-app-symbol"></i> </a></li>
+                                        <li><a target="_blank" href="https://twitter.com"> <i
+                                                    class="flaticon-twitter"></i> </a></li>
+                                        <li><a target="_blank" href="https://linkedin.com"> <i
+                                                    class="flaticon-instagram-2"></i> </a></li>
+                                        <li><a target="_blank" href="https://instagram.com"> <i
+                                                    class="flaticon-pinterest"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">لینک های سریع</h4>
+                                <ul class="footer-menu list-style">
+
+                                    <li><a href="Feedback.html"><i class="flaticon-right-arrow-3"></i> بازخورد مشتریان
+                                        </a></li>
+
+                                    <li><a href="Freq-Questions.html"><i class="flaticon-right-arrow-3"></i> سوالات
+                                            متداول </a>
+                                    </li>
+                                    <li><a href="appointment.html"><i class="flaticon-right-arrow-3"></i>درخواست
+                                            ملاقات</a></li>
+                                    <li><a href="about-Clinic.html"><i class="flaticon-right-arrow-3"></i>درباره ما</a>
+                                    </li>
+                                    <li><a href="contact.html"><i class="flaticon-right-arrow-3"></i>تماس با ما</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">کاوش کنید</h4>
+                                <ul class="footer-menu list-style">
+
+                                    <li><a href="team.html"><i class="flaticon-right-arrow-3"></i> تیم ما </a>
+                                    </li>
+                                    <li><a href="blog-Esfahan.html"><i class="flaticon-right-arrow-3"></i> اصفهان</a>
+                                    </li>
+                                    <li><a href="blog-Beauty.html"><i class="flaticon-right-arrow-3"></i> زیبایی</a>
+                                    </li>
+                                    <li><a href="blog-Dental.html"><i class="flaticon-right-arrow-3"></i> دندانپزشکی
+                                        </a></li>
+
+                                    <li><a href="blog-Nutrition.html "><i class="flaticon-right-arrow-3"></i> تغذیه و
+                                            سلامت </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">در تماس باشید</h4>
+                                <div class="newsletter-box">
+                                    <p>برای دریافت آخرین اخبار به روز ما در خبرنامه ما  ثبت  نام کنید !</p>
+                                    <form action="#" class="newsletter-form">
+                                        <div class="form-group">
+                                            <input type="number" placeholder="شماره خود را وارد کنید">
+                                            <button type="submit"><i class="flaticon-direct"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>
+                        <span class="las la-copyright"></span>
+                        ساخته شده با 💙 در ایران
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <a href="javascript:void(0)" class="back-to-top"><i class="las la-arrow-up"></i></a>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/swiper-min.js"></script>
+    <script src="assets/js/jquery-magnific-popup.js"></script>
+    <script src="assets/js/fancybox.js"></script>
+    <script src="assets/js/progressbar.min.js"></script>
+    <script src="assets/js/comparison-slider.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/odometre.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

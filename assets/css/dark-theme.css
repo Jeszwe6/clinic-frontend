@@ -1,0 +1,396 @@
+:root {
+  --color-primary: #070F16;
+  --Sec-color:#4B5056;
+  --bg-color: #fff;
+  --sec-bg-color: #F2F7FE;
+  --Main-color: #4C99EE;
+  --sub-color: #238878;
+}
+
+/*-------------------------------
+    Dark Theme  CSS
+-------------------------------*/
+.switch-theme-mode {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  z-index: 99;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0 0px 15px #2020203d;
+          box-shadow: 0 0px 15px #2020203d;
+  background: var(--bg-color) url("https://i.ibb.co/7JfqXxB/night.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .slider {
+  background-color: var(--color-primary);
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px var(--color-primary);
+          box-shadow: 0 0 1px var(--color-primary);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  transform: translateX(24px);
+  background: var(--bg-color) url("https://i.ibb.co/FxzBYR9/sunny.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*---------------------------------
+    Color CSS For Elements 
+-----------------------------------*/
+.theme-light .logo .logo-dark {
+  display: none !important;
+}
+
+.theme-light .logo .logo-light {
+  display: block !important;
+}
+
+.theme-dark .dpt-100 {
+  padding-top: 100px;
+}
+
+.theme-dark .logo .logo-light {
+  display: none !important;
+}
+
+.theme-dark .logo .logo-dark {
+  display: block !important;
+}
+
+.theme-dark .td-cod,
+.theme-dark .partner-wrap.bg-souvi,
+.theme-dark .video-wrap::before,
+.theme-dark .appointment-wrap.bg-souvi.td-cod {
+  background-color: var(--color-primary) !important;
+}
+
+.theme-dark body,
+.theme-dark .bg-white,
+.theme-dark .service-card.style1,
+.theme-dark .testimonial-item.style2,
+.theme-dark .header-wrap .header-bottom {
+  background-color: var(--color-primary) !important;
+}
+
+.theme-dark .swiper-slide.swiper-slide-active .testimonial-item.style2,
+.theme-dark .swiper-slide.swiper-slide-active .testimonial-item.style3,
+.theme-dark .swiper-slide.swiper-slide-active .testimonial-item.style1 {
+  background-color: var(--Main-color) !important;
+}
+
+.theme-dark .bg-albastor,
+.theme-dark .td-aztech,
+.theme-dark .course-metainfo,
+.theme-dark .testimonial-item.style1,
+.theme-dark .process-wrap.style1 .process-item span,
+.theme-dark .footer-wrap.style2.bg-emperor,
+.theme-dark .testimonial-wrap.style2.bg-souvi,
+.theme-dark .countre-wrap,
+.theme-dark .pricing-table.style1,
+.theme-dark .appointment-wrap.bg-souvi,
+.theme-dark .service-wrap.bg-souvi,
+.theme-dark .about-quote,
+.theme-dark .hero-wrap.style2,
+.theme-dark .hero-wrap.style3,
+.theme-dark .faq-wrap.bg-souvi,
+.theme-dark .testimonial-item.style3,
+.theme-dark .process-wrap.bg-souvi,
+.theme-dark .header-wrap .search-area,
+.theme-dark .bg-souvi.related-service,
+.theme-dark .category-box ul li a,
+.theme-dark .event-metainfo,
+.theme-dark .course-details-widget ul li p i,
+.theme-dark .nav.nav-tabs.course-tablist li button.active,
+.theme-dark .login-wrap.bg-souvi,
+.theme-dark .wp-block-quote {
+  background-color: var(--color-primary) !important;
+}
+
+.theme-dark .wh-item-wrap .wh-item,
+.theme-dark .nav.nav-tabs.course-tablist li button {
+  background-color: transparent;
+}
+
+.theme-dark .service-card.style2:before {
+  background-color: var(--color-primary);
+}
+
+.theme-dark .service-card.style2:hover:before {
+  background-color: #070F16b5;
+}
+
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6,
+.theme-dark h3 a,
+.theme-dark .or-text p,
+.theme-dark .course-card .course-info .course-title a,
+.theme-dark .course-metainfo p,
+.theme-dark .course-metainfo p a,
+.theme-dark .about-feature-text h4 a,
+.theme-dark .pricing-table .pricing-feature li,
+.theme-dark .pricing-table .price-tag,
+.theme-dark .accordion-item .accordion-header .accordion-button span i,
+.theme-dark .main-menu-wrap #menu > ul > li > a,
+.theme-dark .header-wrap .searchbtn i.about-feature-text,
+.theme-dark .header-wrap .searchbtn i,
+.theme-dark .header-wrap .select-lang .navbar-language .dropdown-toggle,
+.theme-dark .header-wrap .select-lang .navbar-language .dropdown-toggle i,
+.theme-dark .category-box ul li a,
+.theme-dark .category-box ul li a i,
+.theme-dark .post-navigation .prev-post,
+.theme-dark .post-navigation .next-post,
+.theme-dark .process-wrap.style1 .process-item.style2 h4 a,
+.theme-dark .event-item.style1 .event-name h4 a,
+.theme-dark .nav.nav-tabs.course-tablist li button,
+.theme-dark .nav.nav-tabs.course-tablist li button.active,
+.theme-dark .link,
+.theme-dark .pp-post-item .pp-post-info h6 a,
+.theme-dark .author-info-wrap .author-info h6 a,
+.theme-dark .post-tag li a {
+  color: var(--bg-color) !important;
+}
+
+.theme-dark p, .theme-dark span,
+.theme-dark .login-form .login-body .form-group label,
+.theme-dark .blog-metainfo li a,
+.theme-dark .content-feature-list li,
+.theme-dark .portfolio-info-widget .portfolio-info-item-wrap .portfolio-info-item,
+.theme-dark .event-meta-info,
+.theme-dark .event-metainfo li,
+.theme-dark .tab-content.course-tab-content ul.course-details-list li,
+.theme-dark .login-form .login-body .form_group label,
+.theme-dark #cmt-form .checkbox label {
+  color: #ffffffd9 !important;
+}
+
+.theme-dark h3:hover a,
+.theme-dark .main-menu-wrap #menu > ul > li > a.active,
+.theme-dark .about-feature-text h4 a:hover,
+.theme-dark .course-metainfo p a:hover,
+.theme-dark .course-card:hover .course-info .course-title a,
+.theme-dark .blog-metainfo li a:hover,
+.theme-dark .post-navigation .prev-post:hover,
+.theme-dark .post-navigation .next-post:hover,
+.theme-dark .process-wrap.style1 .process-item.style2 h4 a:hover,
+.theme-dark .event-item.style1 .event-name h4:hover a,
+.theme-dark .link:hover,
+.theme-dark .pp-post-item .pp-post-info h6:hover a,
+.theme-dark .author-info-wrap .author-info h6:hover a,
+.theme-dark .post-tag li a:hover {
+  color: var(--Main-color) !important;
+}
+
+.theme-dark .sidebar-widget .category-box ul li a.active,
+.theme-dark .sidebar-widget .category-box ul li a:hover {
+  background-color: var(--Main-color) !important;
+  color: var(--bg-color);
+}
+
+.theme-dark .or-text p {
+  background-color: var(--bg-color);
+}
+
+.theme-dark .or-text p:before {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-dark .tag-list ul li a {
+  color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-dark .tag-list ul li a:hover {
+  background-color: var(--Main-color);
+  color: var(--bg-color);
+  border-color: transparent;
+}
+
+.theme-dark .blog-card.style1,
+.theme-dark .blog-card.style2,
+.theme-dark .blog-card.style3,
+.theme-dark .course-card .course-info,
+.theme-dark .process-wrap.style1 .process-item span,
+.theme-dark .category-item {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.theme-dark .session-img::before {
+  background: rgba(255, 255, 255, 0.21);
+}
+
+.theme-dark .appointment-form-wrap .appointment-form,
+.theme-dark .course-details-widget,
+.theme-dark .login-form {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.theme-dark .sidebar .sidebar-widget {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 25px;
+}
+
+.theme-dark .appointment-form-wrap .appointment-form .form-group input,
+.theme-dark .appointment-form-wrap .appointment-form .form-group textarea,
+.theme-dark .search-box .form-group input,
+.theme-dark .login-form .login-body .form-group input,
+.theme-dark .login-form .login-body .form-group textarea,
+.theme-dark .newsletter-box .newsletter-form .form-group input,
+.theme-dark .comment-form .form-group input,
+.theme-dark .comment-form .form-group textarea,
+.theme-dark #contactForm .form-group input,
+.theme-dark #contactForm .form-group textarea {
+  background-color: var(--sec-bg-color) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--bg-color);
+}
+
+.theme-dark .appointment-form-wrap .appointment-form .form-group select {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--bg-color);
+  background-image: url(../img/down-arrow-2.png);
+}
+
+.theme-dark .sidebar .sidebar-widget h4,
+.theme-dark .portfolio-info-widget .portfolio-info-item-wrap .portfolio-info-item,
+.theme-dark .event-item,
+.theme-dark .page-navigation .page-nav li a,
+.theme-dark .tab-content.course-tab-content .lecture-accordion,
+.theme-dark .tab-content.course-tab-content .lecture-item,
+.theme-dark .post-comment-wrap.style2 .comment-item,
+.theme-dark .post-comment-wrap .comment-item,
+.theme-dark article,
+.theme-dark .post-meta-option,
+.theme-dark .post-author,
+.theme-dark .blog-details-wrap .comment-item,
+.theme-dark #cmt-form,
+.theme-dark .contact-box {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-dark .accordion-item .accordion-header .accordion-button,
+.theme-dark .accordion-item .accordion-body {
+  background-color: #0E1C1F;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--bg-color);
+}
+
+.theme-dark .reply-btn {
+  background-color: #0E1C1F;
+  color: var(--bg-color);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark .hero-wrap.style3 .hero-img-wrap .hero-shape-9,
+.theme-dark .wh-img .shape-1,
+.theme-dark .about-wrap.style3 .about-img .shape-2 {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+.theme-dark .course-tab-content .curriculum-accordion .accordion-button[aria-expanded="true"], .theme-dark .course-tab-content .curriculum-accordion .accordion-button[aria-expanded="false"] {
+  background-color: var(--color-primary);
+  color: var(--bg-color) !important;
+}
+
+@media only screen and (max-width: 1199px) {
+  .theme-dark .mobile-top-bar span {
+    background-color: var(--bg-color);
+  }
+  .theme-dark .close-header-top button i,
+  .theme-dark .main-menu li a,
+  .theme-dark .main-menu li > span.menu-expand i,
+  .theme-dark .menu-close i {
+    color: var(--bg-color);
+  }
+  .theme-dark .navbar-option-item.navbar-language.dropdown.language-option {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .theme-dark .main-menu li a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .theme-dark .main-menu-wrap.open {
+    background-color: var(--color-primary);
+  }
+  .theme-dark .header-wrap.style1 .header-bottom .main-menu-wrap #menu > ul > li > a.active,
+  .theme-dark .header-wrap.style1 .header-bottom .main-menu-wrap #menu > ul > li > a:hover {
+    color: var(--Main-color);
+  }
+  .theme-dark .header-wrap.style1 .header-bottom .main-menu-wrap #menu > ul > li > a {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .theme-dark .main-menu-wrap #menu ul li.has-children .sub-menu {
+    background-color: var(--color-primary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .theme-dark .main-menu-wrap #menu ul li.has-children .sub-menu li a {
+    color: var(--bg-color);
+  }
+  .theme-dark .main-menu-wrap #menu ul li.has-children .sub-menu li a.active,
+  .theme-dark .main-menu-wrap #menu ul li.has-children .sub-menu li a:hover {
+    color: var(--Main-color);
+  }
+}
+/*# sourceMappingURL=dark-theme.css.map */

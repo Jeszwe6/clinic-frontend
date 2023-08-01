@@ -1,0 +1,909 @@
+/*---------------------------------
+          Mixins & Animation CSS
+-----------------------------------*/
+/*-------------------------------------
+  General CSS for RTL Version
+-----------------------------------*/
+[type="email"], [type="number"], [type="tel"], [type="url"] {
+  direction: rtl;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, span, p, li, a {
+letter-spacing: 0px !important;
+}
+.odometer.odometer-auto-theme,.odometer.odometer-theme-default{direction: ltr;font-family: "Vazirmatn RD FD", sans-serif;}
+.coming-soon-area .coming-soon .list ul {
+  direction: ltr;
+}
+
+
+
+input,
+select {
+  text-align: right;
+}
+
+select {
+  background-position: 8% 50%;
+}
+
+.link i {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.btn i {
+  margin: 0 7px 0 0px;
+  top: 1px;
+}
+
+.btn.style1 i {
+  margin-left: 0;
+  margin-right: 7px;
+}
+
+.btn.style3 i {
+  margin: 0 6px 0 7px;
+  top: -1px;
+}
+
+.link {
+  position: relative;
+}
+
+.link i {
+  top: 2px;
+  left: -20px;
+  right: auto;
+}
+
+.link.style1::after {
+  left: auto;
+  right: 0;
+  width: calc(100% + 23px);
+}
+
+.link.style2 i {
+  left: -18px;
+  right: auto;
+}
+
+.checkbox label {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.checkbox label::before {
+  right: 0;
+  left: auto;
+  top: 7px;
+}
+
+.checkbox.style2 input:checked + label::after {
+  top: 8px;
+}
+
+.checkbox.style2 input:checked + label::after {
+  right: 8px;
+  left: auto;
+}
+
+.checkbox input:checked + label::after {
+  left: auto;
+  right: 9px;
+}
+
+.form_group input {
+  left: auto;
+  right: 0;
+}
+
+.form_group label {
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+.social-profile li:last-child,
+.social-profile.style2 li:last-child {
+  margin-right: 10px !important;
+}
+
+.social-profile li:first-child {
+  margin-right: 0;
+}
+
+.back-to-top {
+  right: auto;
+  left: 20px;
+}
+
+.sidebar .sidebar-widget h4::after {
+  left: auto;
+  right: 0;
+}
+
+.select-method input {
+  display: none;
+}
+
+.select-method [type="radio"]:checked + label::before,
+.select-method [type="radio"]:not(:checked) + label::before {
+  left: auto;
+  right: 0;
+}
+
+.select-method [type="radio"]:checked + label,
+.select-method [type="radio"]:not(:checked) + label {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.select-method [type="radio"]:checked + label::after,
+.select-method [type="radio"]:not(:checked) + label::after {
+  left: auto;
+  right: 3px;
+}
+
+.switch-theme-mode {
+  right: auto;
+  left: 20px;
+}
+
+.buy-now-btn {
+  right: auto;
+  left: 20px;
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+.theme-dark .slider-btn.style2 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.theme-dark .slider-btn.style2 i {
+  color: #000;
+}
+
+/*------------------------
+        Header CSS
+-------------------------*/
+.header-wrap.style1 .btn {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.header-wrap.style1 .main-menu-wrap #menu > ul > li.has-children > a::before {
+  right: -12px;
+  left: auto !important;
+}
+
+.header-wrap .searchbtn {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.header-wrap .select-lang {
+  margin-left: 0;
+}
+
+.header-wrap .select-lang .navbar-language .dropdown-toggle::before {
+  right: auto;
+  left: 0;
+}
+
+.main-menu-wrap #menu > ul > li.has-children > a::before {
+  left: 0px;
+}
+
+.main-menu-wrap #menu ul li.has-children .sub-menu {
+  left: 0;
+  right: -6px;
+}
+
+.main-menu-wrap #menu ul > .has-children > .sub-menu > .has-children > .sub-menu {
+  left: auto;
+  right: -100%;
+}
+
+.main-menu-wrap #menu > ul > li.has-children > .sub-menu > .has-children > a::after {
+  right: auto;
+  left: 15px;
+}
+
+.main-menu-wrap #menu > ul > li.has-children > .sub-menu > .has-children > a::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.main-menu-wrap #menu ul li.has-children .sub-menu li {
+  text-align: right;
+}
+
+.header-bottom-right select {
+  padding: 0 7px 0 15px;
+}
+
+.header-bottom-right .lang_selctor select {
+  background-position: calc(100% - 76px) 11px, calc(100% - 68px) 11px, 100% 0;
+}
+
+.header-bottom-right .lang_selctor i {
+  left: auto;
+  right: 8px;
+}
+
+.header-wrap .search-area .form-group button {
+  right: auto;
+  left: 15px;
+}
+
+.header-wrap .header-top .header-top-left .contact-item {
+  margin-left: 20px;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 22px;
+}
+
+.contact-item i {
+  left: auto;
+  right: 0;
+}
+
+.navbar-language .dropdown-toggle {
+  padding-right: 0;
+  padding-left: 25px;
+}
+
+.navbar-language .dropdown-toggle::before {
+  right: auto;
+  left: 0;
+}
+
+.navbar-language .dropdown-toggle i {
+  margin-right: 0;
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+}
+
+.navbar-language .dropdown-menu.show {
+  inset: 0px auto auto auto !important;
+}
+
+.breadcrumb-wrap .breadcrumb-title .breadcrumb-menu li:first-child {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.breadcrumb-wrap .breadcrumb-title .breadcrumb-menu li:first-child a {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.breadcrumb-wrap .breadcrumb-title .breadcrumb-menu li a::after {
+  right: auto;
+  left: -13px;
+}
+
+.breadcrumb-wrap .breadcrumb-title .breadcrumb-menu li:last-child {
+  margin-right: 10px;
+}
+
+/*-------------------------------------
+     Hero CSS
+-----------------------------------*/
+.hero-wrap .hero-content p {
+  padding-right: 0;
+  padding-left: 60px;
+}
+
+.hero-wrap.style1 .hero-img-wrap .hero-img-one {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.hero-wrap.style1 .hero-shape-2 {
+  right: auto;
+  left: 0;
+}
+
+.hero-wrap.style1 .hero-content .hero-btn .btn:nth-child(1), .hero-wrap.style2 .hero-content .hero-btn .btn:nth-child(1), .hero-wrap.style3 .hero-content .hero-btn .btn:nth-child(1) {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.hero-wrap.style1.style2, .hero-wrap.style2.style2, .hero-wrap.style3.style2 {
+  overflow: hidden;
+}
+
+/*-------------------------------------
+     About &  Why Choose us CSS
+-----------------------------------*/
+.about-wrap.style1 .about-content .about-feature-wrap .about-feature-item .about-feature-text {
+
+}
+
+.about-wrap.style1 .about-img-wrap .about-img-two {
+  right: auto;
+  left: 0;
+  border-left: none;
+  border-right: 7px solid #fff;
+}
+
+.about-wrap.style2 .about-content .about-btn .btn:nth-child(1) {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.about-wrap.style3 .about-content .about-icon-wrap .about-icon-item p {
+  margin: 0 15px 0 0;
+}
+
+.category-item {
+  text-align: right;
+}
+
+.countre-wrap .counter-card {
+  padding-left: 0;
+  padding-right: 90px;
+}
+
+.countre-wrap .counter-card .counter-icon {
+  left: auto;
+  right: 0;
+}
+
+.video-wrap .video-btn .btn:nth-child(1) {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/*-------------------------------------
+       Testimonials, Team, FAQ CSS
+-----------------------------------*/
+.client-info-wrap .client-info {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.testimonial-item.style1 .quote-icon {
+  left: 20px;
+  right: auto;
+}
+
+.testimonial-item.style2,
+.testimonial-item.style3 {
+  text-align: right;
+}
+
+.progressbar-wrap .progress-bar .progress-title-holder {
+
+}
+
+.testimonial-item.style2 .client-quote .quote-icon {
+  left: auto;
+  right: 0;
+}
+
+.testimonial-item.style3 .client-quote .client-info-wrap .client-info {
+  margin: 0 20px 0 0px;
+  text-align: right;
+}
+
+.accordion-item .accordion-header .accordion-button span {
+
+}
+
+.accordion-item .accordion-header .accordion-button {
+
+}
+
+.accordion-item .accordion-body {
+
+}
+
+.process-wrap.style1 .process-item {
+  text-align: right;
+}
+
+.process-item-wrap .process-item .process-text {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.wh-item-wrap .wh-item .wh-text {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.link i {
+  top: -3px;
+  left: -20px;
+  right: auto;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.contact-box {
+  text-align: right;
+}
+
+.contact-wrap .contact-box .contact-info {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*-------------------------------------
+       Project CSS
+-----------------------------------*/
+.post-navigation .prev-post {
+  text-align: right;
+}
+
+.post-navigation .next-post {
+  text-align: left;
+}
+
+.pricing-table .pricing-features li i {
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/*-------------------------------------
+       Course CSS
+-----------------------------------*/
+.instructor-info-wrap .instructor-info {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.course-ratings span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.course-metainfo p {
+  position: relative;
+}
+
+.course-metainfo p a {
+  padding-right: 32px;
+}
+
+.course-metainfo p a i {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+/*-------------------------------------
+    Service, Event,project & course CSS
+-----------------------------------*/
+.service-card.style1,
+.service-card.style2 {
+  text-align: right;
+}
+
+.service-card.style2 .icon-overlay {
+  right: auto;
+  left: 30px;
+}
+
+.event-meta-info {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.event-meta-info i {
+  left: auto;
+  right: 0;
+}
+
+.portfolio-info-widget .portfolio-info-item-wrap .portfolio-info-item .portfolio-info-icon {
+  left: auto;
+  right: 0;
+}
+
+.portfolio-info-widget .portfolio-info-item-wrap .portfolio-info-item {
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+.event-metainfo li {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.event-metainfo li i {
+  margin-right: 0;
+  margin-left: 3px;
+}
+
+.post-navigation .prev-post i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.post-navigation .next-post i {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.course-details-widget ul li p i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.tab-content.course-tab-content ul.course-details-list li::before {
+  left: auto;
+  right: 0;
+}
+
+.tab-content.course-tab-content ul.course-details-list li {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.tab-content.course-tab-content ul.course-details-list li::before {
+  top: 10px;
+}
+
+.post-comment-wrap .comment-item .comment-author_text {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.comment-author_info .course-rating {
+  margin-left: 0;
+  margin-right: 15px;
+  top: -1px;
+}
+
+.contact-widget {
+  text-align: right;
+}
+
+.contact-widget .contact-info span.contact-icon {
+  left: auto;
+  right: 0;
+}
+
+.contact-widget .contact-info {
+  padding-left: 0;
+  padding-right: 55px;
+}
+
+/*-------------------------------------
+       Blog CSS
+-----------------------------------*/
+.blog-card.style1 .blog-img .post-date {
+  left: auto;
+  right: 25px;
+}
+
+.blog-metainfo li {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.blog-metainfo li a i {
+  margin-right: 0;
+  margin-left: 7px;
+}
+
+.blog-metainfo li::after {
+  right: auto;
+  left: -9px;
+}
+
+.blog-metainfo li:last-child {
+  padding-right: 20px;
+}
+
+.blog-metainfo li:first-child {
+  padding-right: 0;
+}
+
+.search-box .form-group button {
+  right: auto;
+  left: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.search-box .form-group input {
+  padding: 10px 20px 10px 60px;
+}
+
+.category-box ul li a i {
+  right: auto;
+  left: 15px;
+}
+
+.pp-post-item .pp-post-info {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.pp-post-item .pp-post-info span {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.pp-post-item .pp-post-info span i {
+  left: auto;
+  right: 0;
+}
+
+.author-info-wrap .author-info {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.author-info-wrap .author-info .post-metainfo li {
+  border-left: 1px solid #ddd;
+  border-right: none;
+}
+
+.author-info-wrap .author-info .post-metainfo li a {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.author-info-wrap .author-info .post-metainfo li:first-child {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.author-info-wrap .author-info .post-metainfo li:last-child {
+  padding-right: 10px;
+}
+
+.content-feature-list li {
+  padding-right: 28px;
+  padding-left: 0;
+}
+
+.content-feature-list li i {
+  left: auto;
+  right: 0;
+}
+
+.author-info-wrap .author-info .post-metainfo li a i {
+  left: 9px;
+}
+
+.post-tag span,
+.post-share span {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.post-author .post-author-info {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.comment-item .comment-author-wrap {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.comment-item .comment-author-wrap .comment-author-name .comment-date {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+/*-------------------------------------
+       Footer CSS
+-----------------------------------*/
+.footer-widget-title::after {
+  left: auto;
+  right: 0;
+}
+
+.footer-wrap .footer-top .footer-menu li {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.footer-wrap .footer-top .footer-menu li i {
+  left: auto;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.footer-wrap .footer-top .footer-menu li i,
+.footer-wrap .footer-top .footer-menu li:hover i {
+  left: auto;
+  right: 5px;
+  top: 0;
+}
+
+.newsletter-box .newsletter-form .form-group button {
+  right: auto;
+  left: 5px;
+}
+
+.footer-wrap .footer-top .contact-item {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.contact-box .contact-info {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+/*-------------------------------------
+       Responsive CSS
+-----------------------------------*/
+@media only screen and (max-width: 375px) {
+  .comment-item .comment-author-wrap {
+    margin-left: 0 !important;
+    margin-right: 10px;
+  }
+  .comment-item .comment-author-wrap .comment-author-name .comment-date {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .post-author .post-author-info {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .author-info-wrap .author-info {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .countre-wrap .counter-card {
+    padding-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .back-to-top {
+    right: auto;
+    left: 20px;
+  }
+  .video-wrap .video-btn .btn:nth-child(1) {
+    margin-left: 10px;
+  }
+  .pp-post-item .pp-post-info {
+    margin-right: 10px;
+  }
+  .author-info-wrap .author-info {
+    width: calc(100% - 60px);
+    margin-right: 10px;
+  }
+  .comment-item .comment-author-wrap {
+    margin-right: 10px;
+  }
+  .comment-item .comment-author-wrap .comment-author-name .comment-date {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-menu-wrap #menu > ul > li.has-children > a::after {
+    right: auto !important;
+    left: -2px;
+  }
+  .header-wrap.style1 .btn {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .header-wrap .header-bottom .header-bottom-right .searchbtn {
+    margin: 0 15px 0 0;
+  }
+  .main-menu-wrap #menu ul li a::before {
+    left: auto;
+    right: 9px;
+  }
+  .footer-widget-wrap .footer-widget:nth-child(1) {
+    padding-right: 0;
+    padding-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .mobile-top-bar {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .service-card .service-info {
+    right: 0;
+  }
+  .main-menu li > span.menu-expand {
+    right: auto;
+    left: 0;
+  }
+  .mobile-top-bar span:nth-child(2) {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+  .main-menu li ul.sub-menu {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .header-wrap.style1 .btn,
+  .header-wrap .header-top .header-top-right .social-profile {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .header-wrap .navbar-language .dropdown-toggle {
+    padding-right: 0;
+  }
+  .header-wrap.style1 .header-bottom .main-menu-wrap #menu > ul > li > a,
+  .header-wrap.style2 .header-bottom .main-menu-wrap #menu > ul > li > a,
+  .header-wrap.style3 .header-bottom .main-menu-wrap #menu > ul > li > a {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .appointment-form-wrap {
+    padding-left: 0;
+    padding-right: calc((100% - 720px) / 2 + 15px);
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-wrap.style1 .hero-shape-1 {
+    left: auto;
+    right: 61%;
+  }
+  .appointment-form-wrap {
+    padding-left: 0;
+    padding-right: calc((100% - 960px) / 2 + 15px);
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .xl-none {
+    display: none !important;
+  }
+  .hero-wrap.style1 .hero-shape-1 {
+    left: auto;
+    right: 60%;
+  }
+  .countre-wrap {
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .appointment-form-wrap {
+    padding-left: 0;
+    padding-right: calc((100% - 1140px) / 2 + 15px);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .hero-wrap.style1 .hero-shape-1 {
+    right: 60%;
+    left: auo;
+  }
+  .appointment-form-wrap {
+    padding-left: 0;
+    padding-right: calc((100% - 1320px) / 2 + 15px);
+  }
+  .countre-wrap {
+    padding-left: 20px;
+    padding-right: 60px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .countre-wrap {
+    padding-left: 20px;
+    padding-right: 60px;
+  }
+}
+/*# sourceMappingURL=rtl.css.map */
